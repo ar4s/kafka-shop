@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "kafka-shop"
+version = "0.1.0"
+description = ""
+authors = ["Arkadiusz Adamski <arkadiusz.adamski@gmail.com>"]
+readme = "README.md"
+packages = [{include = "kafka_shop"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.89.1"
+uvicorn = "^0.20.0"
+honcho = "^1.1.0"
+confluent-kafka = "^1.9.2"
+aiokafka = "^0.8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^23.1a1", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
